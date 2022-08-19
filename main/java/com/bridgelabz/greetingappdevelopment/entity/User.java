@@ -3,29 +3,16 @@ package com.bridgelabz.greetingappdevelopment.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-
+@Getter
+@Setter
 public class User {
-    private long id;
-    private String message;
+    private String firstName;
+    private String lastName;
 
-    public User(long id, String message) {
-        this.id = id;
-        this.message = message;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
+    @Override
+    public String toString() {
+        String fN = (firstName == null) ? "" : firstName + " ";
+        String lN = (lastName == null) ? "" : lastName;
+        return fN+lN;
     }
 }
