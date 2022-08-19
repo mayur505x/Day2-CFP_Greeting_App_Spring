@@ -11,8 +11,8 @@ public class User {
 
     @Override
     public String toString() {
-        String fN = (firstName == null) ? "" : firstName + " ";
-        String lN = (lastName == null) ? "" : lastName;
-        return fN+lN;
+        String str = (firstName != null) ? firstName + "" : " ";
+        str += (lastName != null) ? lastName : "";
+        return str.trim();
     }
 }
