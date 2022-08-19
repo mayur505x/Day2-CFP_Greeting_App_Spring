@@ -10,4 +10,5 @@ public interface GreetingAppService {
     Greeting getGreetingById(Long id);
     List<Greeting> getAllGreeting();
     Greeting updateGreeting(Greeting greeting);
+    String deleteMessageById(Long id);
 }

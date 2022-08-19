@@ -38,4 +38,9 @@ public class GreetingAppServiceImpl implements GreetingAppService {
         return greetingRepository.save(new Greeting(2L, "Message Updated !!"));
     }
 
+    @Override
+    public String deleteMessageById(Long id) {
+        greetingRepository.deleteById(id);
+        return "Greeting Message has been Deleted !";
+    }
 }
