@@ -32,4 +32,10 @@ public class GreetingAppServiceImpl implements GreetingAppService {
     public List<Greeting> getAllGreeting() {
         return greetingRepository.findAll();
     }
+
+    @Override
+    public Greeting updateGreeting(Greeting greeting) {
+        return greetingRepository.save(new Greeting(2L, "Message Updated !!"));
+    }
+
 }
