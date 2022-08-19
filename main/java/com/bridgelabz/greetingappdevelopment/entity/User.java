@@ -1,5 +1,9 @@
 package com.bridgelabz.greetingappdevelopment.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
+
 public class User {
     private long id;
     private String message;
